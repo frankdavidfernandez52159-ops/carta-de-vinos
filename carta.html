@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Digital de Vinos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Carta Digital de Vinos</h1>
+            <input type="text" id="search" placeholder="Buscar vino..." class="search-bar">
+        </header>
+
+        <div class="category">
+            <h2>Vinos Espumosos</h2>
+            <div class="wine" onclick="showDetails('cava')">
+                <h3>Cavas Freixenet</h3>
+                <p><strong>Brut Barroco</strong> – 20,50 €</p>
+                <p>Variedades: Parellada, Xarel·lo, Macabeo</p>
+                <p><em>Origen: Sant Sadurní d'Anoia, Barcelona</em></p>
+            </div>
+            <div class="wine" onclick="showDetails('corpinat')">
+                <h3>Llopart</h3>
+                <p><strong>Brut Nature Reserva 2019</strong> – 27,50 €</p>
+                <p>Variedades: Chardonnay, Macabeo, Xarel·lo, Parellada</p>
+                <p><em>Origen: Els Casots, Barcelona</em></p>
+            </div>
+        </div>
+
+        <div id="wine-detail" class="wine-detail">
+            <button onclick="closeDetails()">Cerrar</button>
+            <h2 id="wine-title"></h2>
+            <p id="wine-description"></p>
+        </div>
+
+        <footer>
+            <p><em>Todos los precios incluyen IVA.</em></p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
